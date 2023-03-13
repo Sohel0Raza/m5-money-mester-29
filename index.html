@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://kit.fontawesome.com/48ac595611.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-12 text-center">
+        <h1 class="text-5xl"><span class="font-bold text-yellow-700	">Money</span> <span
+                class="font-bold text-cyan-700">Master</span> <i class="fa-solid fa-sack-dollar text-yellow-700	"></i>
+        </h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-20 w-10/12 mx-auto">
+                <div>
+                    <img class="drop-shadow-2xl" src="./images/800px-Money-1078267_640.jpg" alt="" srcset="">
+                </div>
+                <div class="bg-blue-100 text-center">
+                    <div>
+                        <h2 class="text-2xl font-semibold my-5">Income</h2>
+                        <label class="font-semibold" for="text">Income: </label>
+                        <input id="total-income" class="p-1 pl-5 rounded outline-0 mb-5" type="text" placeholder="input your total income"><br>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-semibold my-5">Expenses</h2>
+                        <div class="flex justify-center">
+                            <div>
+                                <h3 class="font-semibold" for="text">Food: </h3><br>
+                                <h3 class="font-semibold mt-2" for="text">Rent: </h3><br>
+                                <h3 class="font-semibold mt-2" for="text">Clothes: </h3><br>
+                            </div>
+                            <div>
+                                <input id="food-field" class="p-1 pl-5 rounded outline-0 mb-5" type="text" placeholder="input food cost"><br>
+                                <input id="rent-field" class="p-1 pl-5 rounded outline-0 mb-5" type="text" placeholder="input rent cost"><br>
+                                <input id="clothes-field" class="p-1 pl-5 rounded outline-0 mb-5" type="text" placeholder="input clothes cost"><br>
+                            </div>
+                        </div>                   
+                    </div>
+                    <button id="calculate-btn" class="font-semibold text-white rounded px-12 py-2 bg-yellow-700 hover:bg-cyan-700" type="submit">Calculate</button>
+                    <h2 class="text-2xl font-semibold my-5">Total Expenses: <span id="cost-total">00</span></h2>
+                    <h2 class="text-2xl font-semibold my-5">Balance: <span id="new-balance">00</span></h2>
+                    <div>
+                        <label class="font-semibold" for="text">Save: </label>
+                        <input id="saving-field" class="py-2 rounded outline-0 w-24 text-center" type="text" placeholder="saving %">    <span class="mx-5">%</span>
+                        <button id="save-btn" class="font-semibold text-white rounded px-12 py-2 bg-yellow-700 hover:bg-cyan-700" type="submit">Save</button>
+                    </div>
+                    <h2 class="text-2xl font-semibold my-5">Saving Amount: <span id="total-save">00</span></h2>
+                    <h2 class="text-2xl font-semibold my-5">Remaining Balance: <span id="total-balance">00</span></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/money-cost.js"></script>
+</body>
+
+</html>
